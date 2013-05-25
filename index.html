@@ -19,30 +19,32 @@ place into new file, create link
   <link rel="stylesheet" href="style.css" type="text/css">  
 </head>
   <body>
-    <div id="data">ddd</div>
-    <div><button>Graph</button>data table</div>
+    <div><button>Graph</button></div>
+    <div id="data">
+    <script>
 
-
-  	<script>
-// console.log(data);
-      console.log(data[1]);//join the content to new cell relationships/iterations.
-
-      //extends the backbone model.
+      //extends model.
       var Table = Backbone.Model.extend({
-        //can I add css characteristics here? 
-      });
-      //creating instance of model.
-      var freshTable = new Backbone.Model;
+      });//can I add css characteristics here?
+
+      var freshTable = new Backbone.Model;//model instance
 
       //event listener - alert when model is changed.
       freshTable.on('change', function(){
-        alert('Something in the model');
+        
+        alert('Updates to your model/data');
       });
 
       //trigger for event.
       var x = freshTable.set({key: 'value'});
-      $('div').append(data);
-      $('div').append(x + '');//figure out how to turn obj into dom stuff.
+
+      _(data).each(function(item, index, list) {
+        for(var key in item){
+          $("<div>"+item[key]+"</div>").appendTo('#data');
+        }
+      });
+      // $('#data').html(data.val());
+      // $('div').append(x + '');//figure out how to turn obj into dom stuff.
 
       //   [
       //   freshTable.render(x),
