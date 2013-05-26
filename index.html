@@ -9,107 +9,84 @@
   <link rel="stylesheet" href="style.css" type="text/css">  
 </head>
   <body>
-    <div><button>Graph</button></div>
+    <div id="smata"><button>Graph</button></div>
     <div id="data"></div>
     <script>
 
-      var Row = Backbone.Model.extend({ //model constructor
+      //model constructor
+      var Row = Backbone.Model.extend({ 
       });
 
-      var freshRow = new Row();//model instance
+      var freshRow = new Row();
 
-      //event listener - alert when model is changed.
+      //event listener
       freshRow.on('change', function(){
         alert('Something in the model');
       });
-      freshRow.on('click', function(){//add this to an object or selector~
-        alert('got clicked and evented');
-      })
 
       //trigger for event.
       freshRow.set({key: 'value'});
 
-
-      // _(data).each(function(item, index, list) {
-      //   console.log(item)
-      //   for(var key in item){
-      //     $("<div>"+item[key]+"</div>").appendTo('#data');
-      //   }
-      // });
-
+      //define view
       var FreshRowView = Backbone.View.extend({
-        tagName: 'tr',
-        render: function() {
-          _(data).each(function(item,index,list){
-            for(var key in item){
-              $('<p>'+list[key]+'</p>').appendTo('#data');
-            }
-          });
-          
 
-          //return this.$el.html('<td>'+data[0]+'</td>');
+        tagName: 'tr',
+
+        render: function() {
+          // _(data).each(function(item,index,list){
+          //   for(var key in item){
+          //     $('<p>'+list[key]+'</p>').appendTo('#data');
+          //   }
+          // });
+      $('<p>'+data[1]+'</p>').appendTo('#smata');
+        }
+      });
+      //call view
+      var freshRowView = new FreshRowView();
+      freshRowView.render();
+
+      //attach to dom.
+      console.log(freshRowView);
+      // $('#data').append(freshRowView.el);
+
+     //////////////////////////////////////////////
+
+
+      var TableLibrary = Backbone.Collection.extend({
+        model: Row
+      });
+
+      var table = new TableLibrary();
+
+      //event listener
+      table.on('change', function(){
+        alert('table creation in tact');
+      });
+
+      //define view
+      var TableView = Backbone.View.extend({
+
+        tagName: 'div',
+
+        render: function() {
+          var x = $('#smata').append(tableView.el);
+          // _(data).each(function(item,index,list){
+          //   for(var key in item){
+          //     $('<p>'+list[key]+'</p>').appendTo('#data');
+            //}
+          //});
+          $('<p>'+data[0]+'</p>').appendTo('#smata');
         }
       });
 
-      var freshRowView = new FreshRowView();
-      freshRowView.render();
-      console.log(freshRowView);
-      $('#data').append(freshRowView.el);
-      console.log('finished')
-
-      // var FreshTableView = Backbone.View.extend({
-      //   tagname: 'div',
-      //   render: function(){
-      //     return this.$el.html('<div> it"s real</div>');
-      //   }
-      // });
-
-
-      //each peice is determined clearly from the bb models/views/ and it shows in jq. 
-
-
-
-    // //Rows
-    // var Table = Backbone.Collection.extend({
-    //   model: Row
-    // });
-
-    // var TableView =Backbone.View.extend({
-    //   tagName: 'table',
-    // }):
-    // var RowView = Backbone.View.extend({
-    //   tagName: 'tr',
-
-    // }):
-
-    // //entry view
-    // 
+      //call view
+      var tableView = new TableView();
+      tableView.render();
 
       // $('div').append([
       //   firstPostView.render(),
       //   secondPostView.render()
       // ]);
 
-// <!-- copy shaw from git log. 
-// git reset --HARD/soft shaw -->
-
   	</script>
   </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
