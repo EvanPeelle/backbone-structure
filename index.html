@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="style.css" type="text/css">  
 </head>
   <body>
-    <div><button>Graph</button>graphics</div>
-    <div id="data">
+    <div><button>Graph</button></div>
+    <div id="data"></div>
     <script>
 
       var Row = Backbone.Model.extend({ //model constructor
@@ -29,6 +29,7 @@
       //trigger for event.
       freshRow.set({key: 'value'});
 
+
       // _(data).each(function(item, index, list) {
       //   console.log(item)
       //   for(var key in item){
@@ -39,29 +40,29 @@
       var FreshRowView = Backbone.View.extend({
         tagName: 'tr',
         render: function() {
-      //     _(data).each(function(item, index, list) {
-      //   console.log(item)
-      //   for(var key in item){
-      //     $("<tr>"+item[key]+"</tr>").appendTo('#data');
-      //   }
-      // });
+          _(data).each(function(item,index,list){
+            for(var key in item){
+              $('<p>'+list[key]+'</p>').appendTo('#data');
+            }
+          });
+          
 
-          return this.$el.html('<td>'+data+'</td>');
+          //return this.$el.html('<td>'+data[0]+'</td>');
         }
       });
 
       var freshRowView = new FreshRowView();
       freshRowView.render();
-
-      $('div').append(freshRowView.el);
+      console.log(freshRowView);
+      $('#data').append(freshRowView.el);
       console.log('finished')
 
-      var FreshTableView = Backbone.View.extend({
-        tagname: 'div',
-        render: function(){
-          return this.$el.html('<div> it"s real</div>');
-        }
-      });
+      // var FreshTableView = Backbone.View.extend({
+      //   tagname: 'div',
+      //   render: function(){
+      //     return this.$el.html('<div> it"s real</div>');
+      //   }
+      // });
 
 
       //each peice is determined clearly from the bb models/views/ and it shows in jq. 
