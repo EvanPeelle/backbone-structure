@@ -1,350 +1,114 @@
 var data = [
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "Keyword state\tKeyword\tAd group\tStatus\tMax. CPC\tClicks\tImpressions\tCTR\tAvg. CPC\tCost\tAvg. position\tConv. (1-per-click)\tCost / conv. (1-per-click)\tConv. rate (1-per-click)\tView-through conv.\tLabels\tQuality score"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita\tcyvita\teligible\t0.30\t231\t2175\t10.62%\t0.19\t42.97\t3.0\t5\t8.59\t2.16%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita]\tcyvita\teligible\t0.30\t2535\t13297\t19.06%\t0.15\t380.43\t2.09\t54\t7.04\t2.13%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita.com\tcyvita\teligible\t0.30\t6\t34\t17.65%\t0.21\t1.25\t2.18\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita.com]\tcyvita\teligible\t0.30\t542\t2232\t24.28%\t0.22\t119.84\t2.41\t17\t7.05\t3.14%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\twww cyvita com\tcyvita\teligible\t0.30\t98\t471\t20.81%\t0.22\t21.08\t2.56\t3\t7.03\t3.06%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita.com\"\"\"\tcyvita\teligible\t0.30\t2\t10\t20.00%\t0.24\t0.48\t3.6\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita male enhancement\"\"\"\tcyvita male enhancement\teligible\t0.40\t0\t22\t0.00%\t0.00\t0.00\t4.64\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita male enhancement\tcyvita male enhancement\teligible\t0.40\t2\t12\t16.67%\t0.29\t0.58\t4.83\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita male enhancement]\tcyvita male enhancement\teligible\t0.40\t1\t83\t1.20%\t0.39\t0.39\t6.29\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"civita male enhancement\"\"\"\tcivita male enhancement\teligible\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcivita male enhancement\tcivita male enhancement\teligible\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[civita male enhancement]\tcivita male enhancement\teligible\t1.00\t0\t9\t0.00%\t0.00\t0.00\t2.0\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"civita reviews\"\"\"\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcivita reviews\tcivita reviews\tbelow first page bid (First page cpc : 1.25)\t1.00\t0\t9\t0.00%\t0.00\t0.00\t4.0\t0\t0.00\t0.00%\t0\t --\t3"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[civita reviews]\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\treviews of civita\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\treviews for civita\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"reviews of civita\"\"\"\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"reviews for civita\"\"\"\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[reviews of civita]\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[reviews for civita]\tcivita reviews\tlow search volume\t1.00\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcivita\tcivita and MS\teligible\t0.45\t36\t2413\t1.49%\t0.20\t7.36\t2.36\t0\t0.00\t0.00%\t0\t --\t4"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[civita]\tcivita and MS\tbelow first page bid (First page cpc : 0.95)\t0.45\t109\t1381\t7.89%\t0.10\t10.42\t1.11\t3\t3.47\t2.75%\t0\t --\t4"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcivita com\tcivita and MS\teligible\t0.30\t8\t33\t24.24%\t0.20\t1.56\t2.33\t0\t0.00\t0.00%\t0\t --\t4"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvitra com\tcivita and MS\tlow search volume\t0.45\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvitra\tcivita and MS\teligible\t0.45\t0\t5\t0.00%\t0.00\t0.00\t1.6\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyveta\tcivita and MS\teligible\t0.45\t1\t7\t14.29%\t0.39\t0.39\t2.57\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvista\tcivita and MS\teligible\t0.45\t6\t20\t30.00%\t0.03\t0.16\t1.55\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvida\tcivita and MS\teligible\t0.45\t0\t4\t0.00%\t0.00\t0.00\t2.25\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyveta]\tcivita and MS\teligible\t0.45\t10\t37\t27.03%\t0.26\t2.63\t1.92\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvida]\tcivita and MS\teligible\t0.45\t0\t6\t0.00%\t0.00\t0.00\t1.33\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvista]\tcivita and MS\teligible\t0.45\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvitra]\tcivita and MS\teligible\t0.45\t6\t34\t17.65%\t0.32\t1.91\t2.12\t1\t1.91\t16.67%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita reviews\"\"\"\tcyvita reviews\teligible\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita reviews\tcyvita reviews\teligible\t0.22\t0\t2\t0.00%\t0.00\t0.00\t4.5\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita reviews]\tcyvita reviews\teligible\t0.22\t20\t846\t2.36%\t0.17\t3.47\t4.12\t1\t3.47\t5.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\treviews on cyvita\tcyvita reviews\tlow search volume\t0.45\t0\t2\t0.00%\t0.00\t0.00\t3.5\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita customer reviews\tcyvita reviews\tbelow first page bid (First page cpc : 0.65)\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t4"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita review\tcyvita reviews\tbelow first page bid (First page cpc : 0.25)\t0.22\t0\t8\t0.00%\t0.00\t0.00\t5.38\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita testimonials\tcyvita reviews\tlow search volume\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita review\"\"\"\tcyvita reviews\tbelow first page bid (First page cpc : 0.25)\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita.com reviews\"\"\"\tcyvita reviews\teligible\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"reviews of cyvita\"\"\"\tcyvita reviews\tbelow first page bid (First page cpc : 0.30)\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t5"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"reviews for cyvita\"\"\"\tcyvita reviews\tlow search volume\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita testimonials\"\"\"\tcyvita reviews\tlow search volume\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita customer reviews\"\"\"\tcyvita reviews\tbelow first page bid (First page cpc : 0.65)\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t4"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita.com reviews]\tcyvita reviews\teligible\t0.22\t0\t68\t0.00%\t0.00\t0.00\t5.63\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[reviews of cyvita]\tcyvita reviews\tbelow first page bid (First page cpc : 0.30)\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t5"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[reviews for cyvita]\tcyvita reviews\tlow search volume\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita testimonials]\tcyvita reviews\tlow search volume\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita customer reviews]\tcyvita reviews\tbelow first page bid (First page cpc : 0.55)\t0.22\t0\t10\t0.00%\t0.00\t0.00\t4.2\t0\t0.00\t0.00%\t0\t --\t4"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita review]\tcyvita reviews\teligible\t0.22\t0\t68\t0.00%\t0.00\t0.00\t4.72\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\treviews of cyvita\tcyvita reviews\tbelow first page bid (First page cpc : 0.30)\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t5"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\treviews for cyvita\tcyvita reviews\tlow search volume\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita.com reviews\tcyvita reviews\teligible\t0.22\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "paused\tcyvital+\tcyvital\tad group paused\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvital\tcyvital\tad group paused\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita free week\tcyvita free\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita free\tcyvita free\teligible\t0.25\t1\t32\t3.12%\t0.06\t0.06\t3.66\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita free offer\tcyvita free\teligible\t0.25\t1\t11\t9.09%\t0.17\t0.17\t3.09\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita free sample\tcyvita free\teligible\t0.25\t48\t252\t19.05%\t0.15\t7.32\t3.19\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita free trial offer\tcyvita free\teligible\t0.25\t39\t174\t22.41%\t0.19\t7.29\t2.74\t2\t3.64\t5.13%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita free sample]\tcyvita free\teligible\t0.25\t170\t564\t30.14%\t0.15\t25.52\t2.03\t11\t2.32\t6.47%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita free trial]\tcyvita free\teligible\t0.25\t27\t142\t19.01%\t0.15\t4.01\t1.54\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita.com free\tcyvita free\teligible\t0.25\t1\t4\t25.00%\t0.22\t0.22\t1.25\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita.com free trial\tcyvita free\teligible\t0.25\t0\t2\t0.00%\t0.00\t0.00\t2.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita.com free sample\tcyvita free\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita.com free sample\"\"\"\tcyvita free\teligible\t0.25\t0\t1\t0.00%\t0.00\t0.00\t3.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita free offer\"\"\"\tcyvita free\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita free sample\"\"\"\tcyvita free\teligible\t0.25\t2\t2\t100.00%\t0.18\t0.37\t1.5\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita free trial offer\"\"\"\tcyvita free\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita free\"\"\"\tcyvita free\teligible\t0.25\t0\t4\t0.00%\t0.00\t0.00\t2.5\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita.com free\"\"\"\tcyvita free\teligible\t0.25\t0\t2\t0.00%\t0.00\t0.00\t2.5\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita free trial\"\"\"\tcyvita free\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"free cyvita sample\"\"\"\tcyvita free\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita.com free trial\"\"\"\tcyvita free\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita free week\"\"\"\tcyvita free\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita.com free sample]\tcyvita free\teligible\t0.25\t57\t269\t21.19%\t0.14\t8.02\t2.58\t1\t8.02\t1.75%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita.com free]\tcyvita free\teligible\t0.25\t2\t25\t8.00%\t0.19\t0.38\t2.4\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[free cyvita sample]\tcyvita free\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita.com free trial]\tcyvita free\teligible\t0.25\t179\t668\t26.80%\t0.15\t27.54\t1.7\t4\t6.88\t2.23%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita free week]\tcyvita free\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita free]\tcyvita free\teligible\t0.25\t291\t1296\t22.45%\t0.12\t34.37\t2.07\t9\t3.82\t3.09%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita free offer]\tcyvita free\teligible\t0.25\t54\t226\t23.89%\t0.12\t6.52\t2.06\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita free trial offer]\tcyvita free\teligible\t0.25\t14\t85\t16.47%\t0.16\t2.27\t1.72\t1\t2.27\t7.14%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tfree cyvita sample\tcyvita free\teligible\t0.25\t4\t21\t19.05%\t0.17\t0.67\t1.62\t0\t0.00\t0.00%\t0\t --\t8"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita free trial\tcyvita free\teligible\t0.25\t0\t8\t0.00%\t0.00\t0.00\t1.25\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tbuy cyvita\tbuy cyvita\teligible\t0.25\t2\t51\t3.92%\t0.20\t0.39\t6.78\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"buy cyvita\"\"\"\tbuy cyvita\teligible\t0.25\t0\t1\t0.00%\t0.00\t0.00\t3.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[buy cyvita]\tbuy cyvita\teligible\t0.25\t3\t10\t30.00%\t0.11\t0.32\t1.7\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita for man\tcyvita for men\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita for men\tcyvita for men\tbelow first page bid (First page cpc : 0.35)\t0.25\t0\t1\t0.00%\t0.00\t0.00\t1.0\t0\t0.00\t0.00%\t0\t --\t5"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita for man\"\"\"\tcyvita for men\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita for men\"\"\"\tcyvita for men\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita for man]\tcyvita for men\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita for men]\tcyvita for men\tlow search volume\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita side effects\tcyvita side effects\teligible\t0.25\t10\t34\t29.41%\t0.16\t1.57\t3.21\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita side effects]\tcyvita side effects\teligible\t0.25\t78\t540\t14.44%\t0.15\t11.47\t3.19\t3\t3.82\t3.85%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita side effects\"\"\"\tcyvita side effects\teligible\t0.25\t1\t2\t50.00%\t0.14\t0.14\t4.0\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita ingredients\tcyvita ingredients\teligible\t0.25\t4\t26\t15.38%\t0.16\t0.64\t3.08\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita ingredients]\tcyvita ingredients\teligible\t0.25\t4\t59\t6.78%\t0.16\t0.62\t3.66\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita ingredients\"\"\"\tcyvita ingredients\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t9"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita active ingredients\"\"\"\tcyvita ingredients\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita active ingredients]\tcyvita ingredients\teligible\t0.25\t3\t30\t10.00%\t0.24\t0.71\t3.07\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita active ingredients\tcyvita ingredients\teligible\t0.25\t4\t73\t5.48%\t0.16\t0.62\t4.18\t0\t0.00\t0.00%\t0\t --\t7"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita pills\"\"\"\tcyvita pills\teligible\t0.25\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita pills]\tcyvita pills\teligible\t0.25\t19\t171\t11.11%\t0.15\t2.86\t2.44\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita pills\tcyvita pills\teligible\t0.25\t5\t18\t27.78%\t0.14\t0.72\t2.28\t0\t0.00\t0.00%\t0\t --\t10"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t\"\"\"cyvita commercial\"\"\"\tcyvita commercial\teligible\t0.40\t0\t1\t0.00%\t0.00\t0.00\t5.0\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\t[cyvita commercial]\tcyvita commercial\teligible\t0.40\t2\t13\t15.38%\t0.17\t0.34\t1.54\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "enabled\tcyvita commercial\tcyvita commercial\teligible\t0.40\t2\t18\t11.11%\t0.22\t0.43\t3.72\t0\t0.00\t0.00%\t0\t --\t6"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "Total - filtered\t --\t --\t --\t --\t4640\t28134\t16.49%\t0.16\t740.48\t2.31\t115\t6.44\t2.48%\t0\t --\t --"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "Total - Search\t --\t --\t --\t --\t4640\t28134\t16.49%\t0.16\t740.48\t2.31\t115\t6.44\t2.48%\t0\t --\t --"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "Total - Display Network\t --\t --\t --\t --\t0\t0\t0.00%\t0.00\t0.00\t0.0\t0\t0.00\t0.00%\t0\t --\t --"
-	},
-	{
-		"Keyword report (Apr 1, 2013-Apr 30, 2013)": "Total\t --\t --\t --\t --\t4640\t28134\t16.49%\t0.16\t740.48\t2.31\t115\t6.44\t2.48%\t0\t --\t --"
-	}
+  ['Keyword state', 'Keyword', 'Ad group', 'Status', 'Max. CPC', 'Clicks', 'Impressions', 'CTR', 'Avg. CPC', 'Cost', 'Avg. position', 'Conv. (1-per-click)', 'Cost / conv. (1-per-click)', 'Conv. rate (1-per-click)', 'View-through conv.', 'Labels', 'Quality score'],
+  ['enabled', 'cyvita', 'cyvita', 'eligible', '0.30', '231', '2175', '10.62%', '0.19', '42.97', '3.0', '5', '8.59', '2.16%', '0', ' --', '10'],
+  ['enabled', '[cyvita]', 'cyvita', 'eligible', '0.30', '2535', '13297', '19.06%', '0.15', '380.43', '2.09', '54', '7.04', '2.13%', '0', ' --', '10'],
+  ['enabled', 'cyvita.com', 'cyvita', 'eligible', '0.30', '6', '34', '17.65%', '0.21', '1.25', '2.18', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita.com]', 'cyvita', 'eligible', '0.30', '542', '2232', '24.28%', '0.22', '119.84', '2.41', '17', '7.05', '3.14%', '0', ' --', '10'],
+  ['enabled', 'www cyvita com', 'cyvita', 'eligible', '0.30', '98', '471', '20.81%', '0.22', '21.08', '2.56', '3', '7.03', '3.06%', '0', ' --', '10'],
+  ['enabled', '"""cyvita.com"""', 'cyvita', 'eligible', '0.30', '2', '10', '20.00%', '0.24', '0.48', '3.6', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""cyvita male enhancement"""', 'cyvita male enhancement', 'eligible', '0.40', '0', '22', '0.00%', '0.00', '0.00', '4.64', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita male enhancement', 'cyvita male enhancement', 'eligible', '0.40', '2', '12', '16.67%', '0.29', '0.58', '4.83', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita male enhancement]', 'cyvita male enhancement', 'eligible', '0.40', '1', '83', '1.20%', '0.39', '0.39', '6.29', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""civita male enhancement"""', 'civita male enhancement', 'eligible', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', 'civita male enhancement', 'civita male enhancement', 'eligible', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', '[civita male enhancement]', 'civita male enhancement', 'eligible', '1.00', '0', '9', '0.00%', '0.00', '0.00', '2.0', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', '"""civita reviews"""', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'civita reviews', 'civita reviews', 'below first page bid (First page cpc : 1.25)', '1.00', '0', '9', '0.00%', '0.00', '0.00', '4.0', '0', '0.00', '0.00%', '0', ' --', '3'],
+  ['enabled', '[civita reviews]', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'reviews of civita', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'reviews for civita', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""reviews of civita"""', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""reviews for civita"""', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[reviews of civita]', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[reviews for civita]', 'civita reviews', 'low search volume', '1.00', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'civita', 'civita and MS', 'eligible', '0.45', '36', '2413', '1.49%', '0.20', '7.36', '2.36', '0', '0.00', '0.00%', '0', ' --', '4'],
+  ['enabled', '[civita]', 'civita and MS', 'below first page bid (First page cpc : 0.95)', '0.45', '109', '1381', '7.89%', '0.10', '10.42', '1.11', '3', '3.47', '2.75%', '0', ' --', '4'],
+  ['enabled', 'civita com', 'civita and MS', 'eligible', '0.30', '8', '33', '24.24%', '0.20', '1.56', '2.33', '0', '0.00', '0.00%', '0', ' --', '4'],
+  ['enabled', 'cyvitra com', 'civita and MS', 'low search volume', '0.45', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', 'cyvitra', 'civita and MS', 'eligible', '0.45', '0', '5', '0.00%', '0.00', '0.00', '1.6', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', 'cyveta', 'civita and MS', 'eligible', '0.45', '1', '7', '14.29%', '0.39', '0.39', '2.57', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', 'cyvista', 'civita and MS', 'eligible', '0.45', '6', '20', '30.00%', '0.03', '0.16', '1.55', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', 'cyvida', 'civita and MS', 'eligible', '0.45', '0', '4', '0.00%', '0.00', '0.00', '2.25', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '[cyveta]', 'civita and MS', 'eligible', '0.45', '10', '37', '27.03%', '0.26', '2.63', '1.92', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '[cyvida]', 'civita and MS', 'eligible', '0.45', '0', '6', '0.00%', '0.00', '0.00', '1.33', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '[cyvista]', 'civita and MS', 'eligible', '0.45', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '[cyvitra]', 'civita and MS', 'eligible', '0.45', '6', '34', '17.65%', '0.32', '1.91', '2.12', '1', '1.91', '16.67%', '0', ' --', '6'],
+  ['enabled', '"""cyvita reviews"""', 'cyvita reviews', 'eligible', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', 'cyvita reviews', 'cyvita reviews', 'eligible', '0.22', '0', '2', '0.00%', '0.00', '0.00', '4.5', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', '[cyvita reviews]', 'cyvita reviews', 'eligible', '0.22', '20', '846', '2.36%', '0.17', '3.47', '4.12', '1', '3.47', '5.00%', '0', ' --', '8'],
+  ['enabled', 'reviews on cyvita', 'cyvita reviews', 'low search volume', '0.45', '0', '2', '0.00%', '0.00', '0.00', '3.5', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita customer reviews', 'cyvita reviews', 'below first page bid (First page cpc : 0.65)', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '4'],
+  ['enabled', 'cyvita review', 'cyvita reviews', 'below first page bid (First page cpc : 0.25)', '0.22', '0', '8', '0.00%', '0.00', '0.00', '5.38', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', 'cyvita testimonials', 'cyvita reviews', 'low search volume', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""cyvita review"""', 'cyvita reviews', 'below first page bid (First page cpc : 0.25)', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '"""cyvita.com reviews"""', 'cyvita reviews', 'eligible', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '"""reviews of cyvita"""', 'cyvita reviews', 'below first page bid (First page cpc : 0.30)', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '5'],
+  ['enabled', '"""reviews for cyvita"""', 'cyvita reviews', 'low search volume', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""cyvita testimonials"""', 'cyvita reviews', 'low search volume', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""cyvita customer reviews"""', 'cyvita reviews', 'below first page bid (First page cpc : 0.65)', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '4'],
+  ['enabled', '[cyvita.com reviews]', 'cyvita reviews', 'eligible', '0.22', '0', '68', '0.00%', '0.00', '0.00', '5.63', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '[reviews of cyvita]', 'cyvita reviews', 'below first page bid (First page cpc : 0.30)', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '5'],
+  ['enabled', '[reviews for cyvita]', 'cyvita reviews', 'low search volume', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita testimonials]', 'cyvita reviews', 'low search volume', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita customer reviews]', 'cyvita reviews', 'below first page bid (First page cpc : 0.55)', '0.22', '0', '10', '0.00%', '0.00', '0.00', '4.2', '0', '0.00', '0.00%', '0', ' --', '4'],
+  ['enabled', '[cyvita review]', 'cyvita reviews', 'eligible', '0.22', '0', '68', '0.00%', '0.00', '0.00', '4.72', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', 'reviews of cyvita', 'cyvita reviews', 'below first page bid (First page cpc : 0.30)', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '5'],
+  ['enabled', 'reviews for cyvita', 'cyvita reviews', 'low search volume', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita.com reviews', 'cyvita reviews', 'eligible', '0.22', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['paused', 'cyvital+', 'cyvital', 'ad group paused', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', 'cyvital', 'cyvital', 'ad group paused', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', 'cyvita free week', 'cyvita free', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita free', 'cyvita free', 'eligible', '0.25', '1', '32', '3.12%', '0.06', '0.06', '3.66', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', 'cyvita free offer', 'cyvita free', 'eligible', '0.25', '1', '11', '9.09%', '0.17', '0.17', '3.09', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', 'cyvita free sample', 'cyvita free', 'eligible', '0.25', '48', '252', '19.05%', '0.15', '7.32', '3.19', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', 'cyvita free trial offer', 'cyvita free', 'eligible', '0.25', '39', '174', '22.41%', '0.19', '7.29', '2.74', '2', '3.64', '5.13%', '0', ' --', '7'],
+  ['enabled', '[cyvita free sample]', 'cyvita free', 'eligible', '0.25', '170', '564', '30.14%', '0.15', '25.52', '2.03', '11', '2.32', '6.47%', '0', ' --', '8'],
+  ['enabled', '[cyvita free trial]', 'cyvita free', 'eligible', '0.25', '27', '142', '19.01%', '0.15', '4.01', '1.54', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita.com free', 'cyvita free', 'eligible', '0.25', '1', '4', '25.00%', '0.22', '0.22', '1.25', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', 'cyvita.com free trial', 'cyvita free', 'eligible', '0.25', '0', '2', '0.00%', '0.00', '0.00', '2.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita.com free sample', 'cyvita free', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '"""cyvita.com free sample"""', 'cyvita free', 'eligible', '0.25', '0', '1', '0.00%', '0.00', '0.00', '3.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '"""cyvita free offer"""', 'cyvita free', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', '"""cyvita free sample"""', 'cyvita free', 'eligible', '0.25', '2', '2', '100.00%', '0.18', '0.37', '1.5', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', '"""cyvita free trial offer"""', 'cyvita free', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '"""cyvita free"""', 'cyvita free', 'eligible', '0.25', '0', '4', '0.00%', '0.00', '0.00', '2.5', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '"""cyvita.com free"""', 'cyvita free', 'eligible', '0.25', '0', '2', '0.00%', '0.00', '0.00', '2.5', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '"""cyvita free trial"""', 'cyvita free', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""free cyvita sample"""', 'cyvita free', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '"""cyvita.com free trial"""', 'cyvita free', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""cyvita free week"""', 'cyvita free', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita.com free sample]', 'cyvita free', 'eligible', '0.25', '57', '269', '21.19%', '0.14', '8.02', '2.58', '1', '8.02', '1.75%', '0', ' --', '7'],
+  ['enabled', '[cyvita.com free]', 'cyvita free', 'eligible', '0.25', '2', '25', '8.00%', '0.19', '0.38', '2.4', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '[free cyvita sample]', 'cyvita free', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '[cyvita.com free trial]', 'cyvita free', 'eligible', '0.25', '179', '668', '26.80%', '0.15', '27.54', '1.7', '4', '6.88', '2.23%', '0', ' --', '10'],
+  ['enabled', '[cyvita free week]', 'cyvita free', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita free]', 'cyvita free', 'eligible', '0.25', '291', '1296', '22.45%', '0.12', '34.37', '2.07', '9', '3.82', '3.09%', '0', ' --', '6'],
+  ['enabled', '[cyvita free offer]', 'cyvita free', 'eligible', '0.25', '54', '226', '23.89%', '0.12', '6.52', '2.06', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', '[cyvita free trial offer]', 'cyvita free', 'eligible', '0.25', '14', '85', '16.47%', '0.16', '2.27', '1.72', '1', '2.27', '7.14%', '0', ' --', '7'],
+  ['enabled', 'free cyvita sample', 'cyvita free', 'eligible', '0.25', '4', '21', '19.05%', '0.17', '0.67', '1.62', '0', '0.00', '0.00%', '0', ' --', '8'],
+  ['enabled', 'cyvita free trial', 'cyvita free', 'eligible', '0.25', '0', '8', '0.00%', '0.00', '0.00', '1.25', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'buy cyvita', 'buy cyvita', 'eligible', '0.25', '2', '51', '3.92%', '0.20', '0.39', '6.78', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '"""buy cyvita"""', 'buy cyvita', 'eligible', '0.25', '0', '1', '0.00%', '0.00', '0.00', '3.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '[buy cyvita]', 'buy cyvita', 'eligible', '0.25', '3', '10', '30.00%', '0.11', '0.32', '1.7', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', 'cyvita for man', 'cyvita for men', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita for men', 'cyvita for men', 'below first page bid (First page cpc : 0.35)', '0.25', '0', '1', '0.00%', '0.00', '0.00', '1.0', '0', '0.00', '0.00%', '0', ' --', '5'],
+  ['enabled', '"""cyvita for man"""', 'cyvita for men', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""cyvita for men"""', 'cyvita for men', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita for man]', 'cyvita for men', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita for men]', 'cyvita for men', 'low search volume', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita side effects', 'cyvita side effects', 'eligible', '0.25', '10', '34', '29.41%', '0.16', '1.57', '3.21', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', '[cyvita side effects]', 'cyvita side effects', 'eligible', '0.25', '78', '540', '14.44%', '0.15', '11.47', '3.19', '3', '3.82', '3.85%', '0', ' --', '9'],
+  ['enabled', '"""cyvita side effects"""', 'cyvita side effects', 'eligible', '0.25', '1', '2', '50.00%', '0.14', '0.14', '4.0', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', 'cyvita ingredients', 'cyvita ingredients', 'eligible', '0.25', '4', '26', '15.38%', '0.16', '0.64', '3.08', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', '[cyvita ingredients]', 'cyvita ingredients', 'eligible', '0.25', '4', '59', '6.78%', '0.16', '0.62', '3.66', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', '"""cyvita ingredients"""', 'cyvita ingredients', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '9'],
+  ['enabled', '"""cyvita active ingredients"""', 'cyvita ingredients', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '[cyvita active ingredients]', 'cyvita ingredients', 'eligible', '0.25', '3', '30', '10.00%', '0.24', '0.71', '3.07', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', 'cyvita active ingredients', 'cyvita ingredients', 'eligible', '0.25', '4', '73', '5.48%', '0.16', '0.62', '4.18', '0', '0.00', '0.00%', '0', ' --', '7'],
+  ['enabled', '"""cyvita pills"""', 'cyvita pills', 'eligible', '0.25', '0', '0', '0.00%', '0.00', '0.00', '0.0', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '[cyvita pills]', 'cyvita pills', 'eligible', '0.25', '19', '171', '11.11%', '0.15', '2.86', '2.44', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', 'cyvita pills', 'cyvita pills', 'eligible', '0.25', '5', '18', '27.78%', '0.14', '0.72', '2.28', '0', '0.00', '0.00%', '0', ' --', '10'],
+  ['enabled', '"""cyvita commercial"""', 'cyvita commercial', 'eligible', '0.40', '0', '1', '0.00%', '0.00', '0.00', '5.0', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', '[cyvita commercial]', 'cyvita commercial', 'eligible', '0.40', '2', '13', '15.38%', '0.17', '0.34', '1.54', '0', '0.00', '0.00%', '0', ' --', '6'],
+  ['enabled', 'cyvita commercial', 'cyvita commercial', 'eligible', '0.40', '2', '18', '11.11%', '0.22', '0.43', '3.72', '0', '0.00', '0.00%', '0', ' --', '6'],
 ];

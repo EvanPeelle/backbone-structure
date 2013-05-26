@@ -1,6 +1,6 @@
-<!-- notes: 
+<!-- notes:
 find sample data turn into json object/csv
-place into new file, create link 
+place into new file, create link
 
 2 each row is a view/model
   each collection is models.
@@ -13,62 +13,47 @@ place into new file, create link
   <head>
     <script src="dataJSON.js"></script>
     <script src="jquery.js"></script>
-  	<script src="underscore.js"></script>
-  	<script src="backbone.js"></script>
+    <script src="underscore.js"></script>
+    <script src="backbone.js"></script>
     <script src="style.css" type="style"></script>
   <link rel="stylesheet" href="style.css" type="text/css">  
 </head>
   <body>
-    <div><button>Graph</button></div>
+    <div><button>Graph</button>graphics</div>
     <div id="data">
     <script>
-
+      
       //extends model.
-      var Table = Backbone.Model.extend({
-      });//can I add css characteristics here?
+      var Row = Backbone.Model.extend({
+      });//can I add css characteristics here? 
 
-      var freshTable = new Backbone.Model;//model instance
+      var freshRow = new Row();//model instance
 
       //event listener - alert when model is changed.
-      freshTable.on('change', function(){
-        
-        alert('Updates to your model/data');
+      freshRow.on('change', function(){
+        alert('Something in the model');
       });
+      freshRow.on('click', function(){
+        alert('got clicked and evented');
+      })
 
       //trigger for event.
-      var x = freshTable.set({key: 'value'});
+      freshRow.set({key: 'value'});
 
       _(data).each(function(item, index, list) {
+        console.log(item)
         for(var key in item){
           $("<div>"+item[key]+"</div>").appendTo('#data');
         }
       });
-      // $('#data').html(data.val());
-      // $('div').append(x + '');//figure out how to turn obj into dom stuff.
-
-      //   [
-      //   freshTable.render(x),
-      // ]);
-      console.log("fresh");
-
-      //We are going to create a blog in backbone!  This is your chance to practice using backbone models and backbone views together.  Also you will need to create an .edit function in your post model and add a listener that will update the view when someone calls the edit function on a blog post.
-
-      //put your Post model class here
-
-
-      //put your postView class here
-
-
-      // var firstPost = new Post("This is a blog post.  This message should be displayed on my blog.");
-      // var secondPost = new Post("Hi!  I'm back, this should be below the first one.  Did both posts render correctly?");
-      // var firstPostView = new PostView({model: firstPost});
-      // var secondPostView = new PostView({model: secondPost});
 
       // $('div').append([
       //   firstPostView.render(),
       //   secondPostView.render()
       // ]);
 
+// <!-- copy shaw from git log. 
+// git reset --HARD/soft shaw -->
 
   	</script>
   </body>
