@@ -21,20 +21,12 @@ var RowView = Backbone.View.extend({
 }):
 
 //entry view
-var SongQueuentryView = Backbone.View.extend({
+var TableRowView = Backbone.View.extend({
 
   tagName: 'tr',
 
-  template: _.template('<td>(<%= 0 %>)</td><td><%= 1 %></td>'),
-
-  events: {
-    'click': function() {
-      this.model.dequeue();
-    }
-  },
-
-  render: function(){//gets returned on line 53. 
-    return this.$el.html(this.template(this.model.attributes.inputData));
+  render: function(){//gets returned on line 53.
+    return this.$el.html('<td>it works</td>');
   }
 
 });

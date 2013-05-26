@@ -1,16 +1,6 @@
-<!-- notes:
-find sample data turn into json object/csv
-place into new file, create link
-
-2 each row is a view/model
-  each collection is models.
-  view for whole collection.
-3 router for control of objects/functionality
-   -->
-<!-- checking git now -->
-
 <html>
   <head>
+     <script src="row.js"></script>
     <script src="dataJSON.js"></script>
     <script src="jquery.js"></script>
     <script src="underscore.js"></script>
@@ -22,10 +12,9 @@ place into new file, create link
     <div><button>Graph</button>graphics</div>
     <div id="data">
     <script>
-      
-      //extends model.
-      var Row = Backbone.Model.extend({
-      });//can I add css characteristics here? 
+
+      var Row = Backbone.Model.extend({ //model constructor
+      });
 
       var freshRow = new Row();//model instance
 
@@ -33,19 +22,67 @@ place into new file, create link
       freshRow.on('change', function(){
         alert('Something in the model');
       });
-      freshRow.on('click', function(){
+      freshRow.on('click', function(){//add this to an object or selector~
         alert('got clicked and evented');
       })
 
       //trigger for event.
       freshRow.set({key: 'value'});
 
-      _(data).each(function(item, index, list) {
-        console.log(item)
-        for(var key in item){
-          $("<div>"+item[key]+"</div>").appendTo('#data');
+      // _(data).each(function(item, index, list) {
+      //   console.log(item)
+      //   for(var key in item){
+      //     $("<div>"+item[key]+"</div>").appendTo('#data');
+      //   }
+      // });
+
+      var FreshRowView = Backbone.View.extend({
+        tagName: 'tr',
+        render: function() {
+      //     _(data).each(function(item, index, list) {
+      //   console.log(item)
+      //   for(var key in item){
+      //     $("<tr>"+item[key]+"</tr>").appendTo('#data');
+      //   }
+      // });
+
+          return this.$el.html('<td>'+data+'</td>');
         }
       });
+
+      var freshRowView = new FreshRowView();
+      freshRowView.render();
+
+      $('div').append(freshRowView.el);
+      console.log('finished')
+
+      var FreshTableView = Backbone.View.extend({
+        tagname: 'div',
+        render: function(){
+          return this.$el.html('<div> it"s real</div>');
+        }
+      });
+
+
+      //each peice is determined clearly from the bb models/views/ and it shows in jq. 
+
+
+
+    // //Rows
+    // var Table = Backbone.Collection.extend({
+    //   model: Row
+    // });
+
+    // var TableView =Backbone.View.extend({
+    //   tagName: 'table',
+    // }):
+    // var RowView = Backbone.View.extend({
+    //   tagName: 'tr',
+
+    // }):
+
+    // //entry view
+    // 
 
       // $('div').append([
       //   firstPostView.render(),
@@ -57,3 +94,21 @@ place into new file, create link
 
   	</script>
   </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
