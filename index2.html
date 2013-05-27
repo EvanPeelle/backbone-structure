@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <script src="dataJSON2.js"></script>
+    <script src="jquery.js"></script>
+    <script src="underscore.js"></script>
+    <script src="backbone.js"></script>
+    <script src="style.css" type="style"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+  <body>
+    <div id="smata"><button>Graph</button></div>
+    <div id="data"></div>
+    <script>
+    // $(function(){
+    //     // set up model objects
+    //     var library = new Songs(songData);
+    //     var app = new App({library: library});
+
+    //     // build a view for the top level of the whole app
+    //     var appView = new AppView({model: app});
+
+    //     // put the view onto the screen
+    //     $('body').append(appView.render());
+
+console.log(data);
+
+
+
+
+//table model
+var TableMain = Backbone.Model.extend({
+});
+
+var tableMain = new TableMain();
+
+console.log(tableMain);
+
+
+  //collection
+var CollectedRows = Backbone.Collection.extend({
+  model : Row
+})
+var collectedRows = new CollectedRows();
+console.log(collectedRows);
+
+
+    //row
+var Row = Backbone.Model.extend({
+});
+var row = new Row();
+console.log(row);
+
+
+
+//table - holds the collection
+  //collection - iterate over 
+    //row - behavior - render
+
+//iterate over the data to fill the model and row.
+
+//view
+//row - render a tr tag
+  //jq each row contents into the row.
+//collection - iterate over each 
+//table - holds collections view. (callbacks)
+
+// render this to the dom
+
+
+
+
+
+
+
+
+    </script>
+  </body>

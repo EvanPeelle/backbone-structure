@@ -12,15 +12,14 @@
     <div id="data"></div>
     <script>
 
+      console.log(data);
       //model constructor
       var Row = Backbone.Model.extend({
       });
-
       var freshRow = new Row();
 
-      //event listener
       freshRow.on('change', function(){
-        alert('Something in the model');
+        alert('listening to event changes');
       });
 
       //trigger for event.
@@ -28,17 +27,15 @@
 
       //define view
       var FreshRowView = Backbone.View.extend({
-
         tagName: 'tr',
-
         render: function() {
-          return "some html string with the correct data";
+          // return "some html string with the correct data";
           // _(data).each(function(item,index,list){
           //   for(var key in item){
           //     $('<p>'+list[key]+'</p>').appendTo('#data');
           //   }
           // });
-          $('<p>'+data.enabled1+'</p>').appendTo('#smata');
+          // $('<p>'+data+'</p>').appendTo('#smata');
         }
       });
       //call view
@@ -53,9 +50,7 @@
 
       var TableLibrary = Backbone.Collection.extend({
         model: Row
-
       });
-
       var table = new TableLibrary();
 //
       table.on("add", function(data) {
@@ -76,10 +71,12 @@
           //     $('<p>'+list[key]+'</p>').appendTo('#data');
           //   }
           // });
-          $('<p>'+data[0]+'</p>').appendTo('#data');
-          return this.$el.append(this.collection.map(function(row, key, list) {
-            return new FreshRowView({model: row}).render();
-          }));
+          console.log('data: ', data[0]);
+          $('<p>' + data[0]['Keyword state'] + '</p>').appendTo('#data');
+          //create a queue full of songs based on my data. 
+          // return this.$el.append(this.collection.map(function(row, key, list) {
+            // return new FreshRowView({model: row}).render();
+          // }));
         }
       });
 
@@ -92,5 +89,5 @@
       //   secondPostView.render()
       // ]);
 console.log(data);
-  	</script>
+    </script>
   </body>

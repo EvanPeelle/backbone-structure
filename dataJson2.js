@@ -10,9 +10,9 @@ var data = [
 
 
 
-var data2 = [
-{'Keyword state': 'Keyword', 'Ad group', 'Status', 'Max. CPC', 'Clicks', 'Impressions', 'CTR', 'Avg. CPC', 'Cost', 'Avg. position', 'Conv. (1-per-click)', 'Cost / conv. (1-per-click)', 'Conv. rate (1-per-click)', 'View-through conv.', 'Labels', 'Quality score'},
-{'enabled1': 'cyvita', 'cyvita', 'eligible', '0.30', '231', '2175', '10.62%', '0.19', '42.97', '3.0', '5', '8.59', '2.16%', '0', ' --', '10'},
-{'enabled2': '[cyvita]', 'cyvita', 'eligible', '0.30', '2535', '13297', '19.06%', '0.15', '380.43', '2.09', '54', '7.04', '2.13%', '0', ' --', '10'},
-{'enabled3': 'cyvita.com', 'cyvita', 'eligible', '0.30', '6', '34', '17.65%', '0.21', '1.25', '2.18', '0', '0.00', '0.00%', '0', ' --', '10'}
-];
+// var data2 = [
+// {'Keyword state': 'Keyword', 'Ad group', 'Status', 'Max. CPC', 'Clicks', 'Impressions', 'CTR', 'Avg. CPC', 'Cost', 'Avg. position', 'Conv. (1-per-click)', 'Cost / conv. (1-per-click)', 'Conv. rate (1-per-click)', 'View-through conv.', 'Labels', 'Quality score'},
+// {'enabled1': 'cyvita', 'cyvita', 'eligible', '0.30', '231', '2175', '10.62%', '0.19', '42.97', '3.0', '5', '8.59', '2.16%', '0', ' --', '10'},
+// {'enabled2': '[cyvita]', 'cyvita', 'eligible', '0.30', '2535', '13297', '19.06%', '0.15', '380.43', '2.09', '54', '7.04', '2.13%', '0', ' --', '10'},
+// {'enabled3': 'cyvita.com', 'cyvita', 'eligible', '0.30', '6', '34', '17.65%', '0.21', '1.25', '2.18', '0', '0.00', '0.00%', '0', ' --', '10'}
+// ];
