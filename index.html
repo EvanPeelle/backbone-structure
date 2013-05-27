@@ -1,12 +1,11 @@
 <html>
   <head>
-     <script src="row.js"></script>
-    <script src="dataJSON.js"></script>
+    <script src="dataJSON2.js"></script>
     <script src="jquery.js"></script>
     <script src="underscore.js"></script>
     <script src="backbone.js"></script>
     <script src="style.css" type="style"></script>
-  <link rel="stylesheet" href="style.css" type="text/css">  
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
   <body>
     <div id="smata"><button>Graph</button></div>
@@ -14,7 +13,7 @@
     <script>
 
       //model constructor
-      var Row = Backbone.Model.extend({ 
+      var Row = Backbone.Model.extend({
       });
 
       var freshRow = new Row();
@@ -33,36 +32,38 @@
         tagName: 'tr',
 
         render: function() {
+          return "some html string with the correct data";
           // _(data).each(function(item,index,list){
           //   for(var key in item){
           //     $('<p>'+list[key]+'</p>').appendTo('#data');
           //   }
           // });
-      $('<p>'+data[1]+'</p>').appendTo('#smata');
+          $('<p>'+data.enabled1+'</p>').appendTo('#smata');
         }
       });
       //call view
-      var freshRowView = new FreshRowView();
+      var freshRowView = new FreshRowView({model: new Row()});//*access new Row*
       freshRowView.render();
 
       //attach to dom.
       console.log(freshRowView);
-      // $('#data').append(freshRowView.el);
+      $('#data').append(freshRowView.el);
 
      //////////////////////////////////////////////
 
-
       var TableLibrary = Backbone.Collection.extend({
         model: Row
+
       });
 
       var table = new TableLibrary();
-
-      //event listener
-      table.on('change', function(){
-        alert('table creation in tact');
+//
+      table.on("add", function(data) {
+        // alert("Ahoy " + data[0].get(data[1]) + "!");
       });
 
+      table.add(data[0]);
+//
       //define view
       var TableView = Backbone.View.extend({
 
@@ -73,20 +74,23 @@
           // _(data).each(function(item,index,list){
           //   for(var key in item){
           //     $('<p>'+list[key]+'</p>').appendTo('#data');
-            //}
-          //});
-          $('<p>'+data[0]+'</p>').appendTo('#smata');
+          //   }
+          // });
+          $('<p>'+data[0]+'</p>').appendTo('#data');
+          return this.$el.append(this.collection.map(function(row, key, list) {
+            return new FreshRowView({model: row}).render();
+          }));
         }
       });
 
       //call view
-      var tableView = new TableView();
+      var tableView = new TableView({collection: table});
       tableView.render();
 
       // $('div').append([
       //   firstPostView.render(),
       //   secondPostView.render()
       // ]);
-
+console.log(data);
   	</script>
   </body>
